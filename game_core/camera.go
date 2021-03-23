@@ -26,7 +26,9 @@ func (c *Camera) RenderObject(a *Actor) {
 		symbol = fmt.Sprintf("[font=tiles]%s[/font]", symbol)
 	}
 	blt.Layer(a.Layer)
-	x := ((c.WindowSize.X / 2) - (c.Focus.Position.X - a.Position.X)) * 64
-	y := ((c.WindowSize.Y / 2) - (c.Focus.Position.Y - a.Position.Y)) * 64
-	blt.Print(x, y, symbol)
+	x := (c.Focus.Position.X - a.Position.X) * 4
+	y := (c.Focus.Position.Y - a.Position.Y) * 4
+	blt.Print(((c.WindowSize.X / 2) - x), ((c.WindowSize.Y / 2) - y), symbol)
+	blt.Layer(10)
+	blt.Print(((c.WindowSize.X / 2) - x), ((c.WindowSize.Y / 2) - y), a.Type)
 }
