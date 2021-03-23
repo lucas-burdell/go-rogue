@@ -1,0 +1,69 @@
+22:45:30.740 [info] OpenGL: maximum texture size is 32768x32768
+22:45:30.744 [info] OpenGL: GPU supports NPOTD textures
+22:45:30.746 [debug] Group "window":
+22:45:30.749 [debug] * "icon" = "default"
+22:45:30.752 [debug] * "size" = "80x25"
+22:45:30.755 [debug] Group "font":
+22:45:30.758 [debug] * "_" = "default"
+22:45:30.761 [info] New font 'main' -> index 0
+22:45:30.764 [debug] Requested resource "default" with possible prefix "tileset-"
+22:45:30.766 [debug] Resource "tileset-default" is built-in
+22:45:30.769 [debug] Bitmap tileset: failed to parse guessed tile size, not an error
+22:45:30.772 [debug] Requested resource "tileset-default" with possible prefix "codepage-"
+22:45:30.775 [debug] Resource "codepage-tileset-default" is built-in
+22:45:30.778 [debug] Custom codepage file encoding detected to be ASCII UTF-8
+22:45:30.782 [trace] Loaded PNG image, 256x320
+22:45:30.785 [debug] Tileset has 32x20 tiles
+22:45:30.788 [debug] Group "terminal":
+22:45:30.791 [debug] * "encoding" = "utf8"
+22:45:30.794 [debug] Group "input":
+22:45:30.797 [debug] * "filter" = "keyboard"
+22:45:30.801 [debug] SetOptions: new cell size is 8x16
+22:45:30.804 [debug] SetOptions: new window size is 80x25
+22:45:30.807 [trace] SetWindowPos(104, 104, 656, 439)
+22:45:30.811 [info] Applying options from configuration file, if any
+22:45:30.814 [info] Trying to set "font._='assets/consola.ttf';font.size='16x16';"
+22:45:30.817 [debug] Group "font":
+22:45:30.821 [debug] * "_" = "assets/consola.ttf"
+22:45:30.824 [debug] * "size" = "16x16"
+22:45:30.827 [debug] Requested resource "assets/consola.ttf" with possible prefix "tileset-"
+22:45:30.831 [debug] Loaded resource from 'assets\consola.ttf' (459180 bytes)
+22:45:30.834 [trace] height 10 is smaller or equal (8x15 / 16x16), will try 53; [10, 96]
+22:45:30.838 [trace] height 53 was to big (39x83 / 16x16), will try 31.5; [10, 53]
+22:45:30.841 [trace] height 31.5 was to big (24x49 / 16x16), will try 20.75; [10, 31.5]
+22:45:30.844 [trace] height 20.75 was to big (16x33 / 16x16), will try 15.375; [10, 20.75]
+22:45:30.848 [trace] height 15.375 was to big (12x25 / 16x16), will try 12.6875; [10, 15.375]
+22:45:30.851 [trace] height 12.6875 was to big (10x20 / 16x16), will try 11.3438; [10, 12.6875]
+22:45:30.854 [trace] height 11.3438 was to big (9x18 / 16x16), will try 10.6719; [10, 11.3438]
+22:45:30.858 [trace] height 10.6719 is smaller or equal (8x16 / 16x16), but right border 11.3438 is too close, stopping
+22:45:30.862 [trace] Font tile size is 16x16, font is monospace
+22:45:30.866 [debug] SetOptions: new cell size is 16x16
+22:45:30.869 [trace] SetWindowPos(104, 104, 1296, 439)
+22:45:30.872 [info] Trying to set "log.file='bt.log';log.level='trace';"
+22:45:30.876 [debug] Group "log":
+22:45:30.879 [debug] * "file" = "bt.log"
+22:45:30.882 [debug] * "level" = "trace"
+22:45:30.886 [info] Trying to set "tiles 0x1000._='assets/tileset.png';tiles 0x1000.resize='64x64';tiles 0x1000.resize-filter='nearest';tiles 0x1000.size='8x8';"
+22:45:30.889 [debug] Group "tiles 0x1000":
+22:45:30.892 [debug] * "_" = "assets/tileset.png"
+22:45:30.895 [debug] * "resize" = "64x64"
+22:45:30.899 [debug] * "resize-filter" = "nearest"
+22:45:30.902 [debug] * "size" = "8x8"
+22:45:30.905 [info] New font 'tiles' -> index 1
+22:45:30.909 [debug] Requested resource "assets/tileset.png" with possible prefix "tileset-"
+22:45:30.912 [debug] Loaded resource from 'assets\tileset.png' (3393 bytes)
+22:45:30.915 [debug] Bitmap tileset: failed to parse guessed tile size, not an error
+22:45:30.919 [trace] Loaded PNG image, 64x120
+22:45:30.922 [debug] BitmapTileset: changing tile size 8x8 -> 64x64
+22:45:30.926 [debug] Tileset has 8x15 tiles
+22:45:30.933 [info] Trying to set "window.cellsize='16x16';window.size='100x35';window.title='RogueLike';"
+22:45:30.937 [debug] Group "window":
+22:45:30.940 [debug] * "cellsize" = "16x16"
+22:45:30.943 [debug] * "size" = "100x35"
+22:45:30.947 [debug] * "title" = "RogueLike"
+22:45:30.950 [debug] SetOptions: new cell size is 16x16
+22:45:30.953 [debug] SetOptions: new window size is 100x35
+22:45:30.957 [trace] SetWindowPos(104, 104, 1616, 599)
+22:45:30.961 [info] Applying palette from configuration file
+22:45:30.964 [info] Terminal initialization complete
+22:45:30.969 [trace] SetWindowPos(152, 220, 1616, 599)

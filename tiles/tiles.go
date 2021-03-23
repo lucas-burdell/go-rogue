@@ -1,0 +1,15 @@
+package tiles
+
+const (
+	EMPTY                       = 0
+	PLAYER_ANIM_1               = 63
+	PLAYER_ANIM_2               = 64
+	EXTERIOR_WALL_METAL_FULL    = 1
+	EXTERIOR_WALL_METAL_TOP     = 2
+	EXTERIOR_WALL_METAL_SIDE    = 3
+	INTERIOR_WALL_METAL1        = 4
+	INTERIOR_WALL_METAL2        = 5
+	INTERIOR_WALL_METAL_WINDOW  = 6
+	INTERIOR_WALL_METAL_CONTROL = 10
+	METAL_FLOOR_1               = 15
+)
