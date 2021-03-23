@@ -14,3 +14,8 @@ Do a build as above and then run ./bin/rougelike.exe
 **\*OR\***
 
 Run `source ./source.sh` and run `run`. 
+
+
+## Credits
+
+The tileset is from https://scut.itch.io/7drl-tileset-2018
