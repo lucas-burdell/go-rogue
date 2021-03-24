@@ -1,2 +1,2 @@
-alias build="go build -o ./bin/rougelike.exe ./cmd/main.go"
-alias run="build && ./bin/rougelike.exe"
+alias build="go build -o ./bin/roguelike.exe ./cmd/main.go"
+alias run="build && ./bin/roguelike.exe"

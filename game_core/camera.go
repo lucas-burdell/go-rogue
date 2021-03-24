@@ -1,9 +1,9 @@
 package game_core
 
 import (
-	blt "bearlibterminal"
 	"fmt"
-	"rougelike/data"
+	blt "roguelike/bearlibterminal"
+	"roguelike/data"
 )
 
 type Camera struct {

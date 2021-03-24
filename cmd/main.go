@@ -1,12 +1,12 @@
 package main
 
 import (
-	blt "bearlibterminal"
 	"encoding/json"
 	"io/ioutil"
-	"rougelike/data"
-	"rougelike/game_core"
-	"rougelike/loader"
+	blt "roguelike/bearlibterminal"
+	"roguelike/data"
+	"roguelike/game_core"
+	"roguelike/loader"
 	"runtime"
 	"strconv"
 	"strings"

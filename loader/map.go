@@ -1,9 +1,9 @@
 package loader
 
 import (
-	"rougelike/component"
-	"rougelike/data"
-	"rougelike/game_core"
+	"roguelike/component"
+	"roguelike/data"
+	"roguelike/game_core"
 )
 
 type Map struct {

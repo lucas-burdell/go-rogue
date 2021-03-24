@@ -1,9 +1,9 @@
 package game_core
 
 import (
-	blt "bearlibterminal"
-	"rougelike/component"
-	"rougelike/data"
+	blt "roguelike/bearlibterminal"
+	"roguelike/component"
+	"roguelike/data"
 )
 
 func CreateInputHandler(player *Actor) func(key int) {

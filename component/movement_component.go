@@ -1,6 +1,6 @@
 package component
 
-import "rougelike/data"
+import "roguelike/data"
 
 var MovementComponentName = "Movement"
 

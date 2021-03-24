@@ -1,8 +1,8 @@
 package game_core
 
 import (
-	"rougelike/component"
-	"rougelike/data"
+	"roguelike/component"
+	"roguelike/data"
 )
 
 type movementSystem struct {

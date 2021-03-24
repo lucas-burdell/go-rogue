@@ -1,6 +1,6 @@
 package game_core
 
-import "rougelike/component"
+import "roguelike/component"
 
 type Game struct {
 	Camera  *Camera

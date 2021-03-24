@@ -5,16 +5,16 @@ A Roguelike written in Golang using bindings for [bearlibterminal](http://foo.wy
 ## Usage
 
 ### Building
-Run `source ./source.sh` and then run `build`. 
+
+Run `source ./source.sh` and then run `build`.
 
 ### Running
 
-Do a build as above and then run ./bin/rougelike.exe
+Do a build as above and then run ./bin/roguelike.exe
 
 **\*OR\***
 
-Run `source ./source.sh` and run `run`. 
-
+Run `source ./source.sh` and run `run`.
 
 ## Credits
 
