@@ -11,6 +11,14 @@ type Camera struct {
 	WindowSize *data.Vector
 }
 
+func (c *Camera) renderChildObject(a *Actor, parent *Actor) {
+	x := (c.Focus.Position.X - (parent.Position.X - a.Position.X)) * 4
+	y := (c.Focus.Position.Y - (parent.Position.Y - a.Position.Y)) * 4
+	symbol := fmt.Sprintf("[font=%s]%s[/font]", a.TileMap, string(a.Symbol))
+	blt.Layer(a.Layer)
+	blt.Print(((c.WindowSize.X / 2) - x), ((c.WindowSize.Y / 2) - y), symbol)
+}
+
 func (c *Camera) RenderObject(a *Actor) {
 	if a == nil {
 		panic("wtf did you do")
@@ -21,14 +29,15 @@ func (c *Camera) RenderObject(a *Actor) {
 	if a.Position.Y > c.Focus.Position.Y+(c.WindowSize.Y/2) || a.Position.Y < c.Focus.Position.Y-(c.WindowSize.Y/2) {
 		return
 	}
-	symbol := string(a.Symbol)
-	if a.IsTile {
-		symbol = fmt.Sprintf("[font=tiles]%s[/font]", symbol)
-	}
-	blt.Layer(a.Layer)
+	symbol := fmt.Sprintf("[font=%s]%s[/font]", a.TileMap, string(a.Symbol))
+
 	x := (c.Focus.Position.X - a.Position.X) * 4
 	y := (c.Focus.Position.Y - a.Position.Y) * 4
+	blt.Layer(a.Layer)
 	blt.Print(((c.WindowSize.X / 2) - x), ((c.WindowSize.Y / 2) - y), symbol)
-	blt.Layer(10)
-	blt.Print(((c.WindowSize.X / 2) - x), ((c.WindowSize.Y / 2) - y), a.Type)
+	if a.Attachments != nil {
+		for _, v := range a.Attachments {
+			c.renderChildObject(v, a)
+		}
+	}
 }

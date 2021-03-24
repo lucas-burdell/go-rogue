@@ -1,7 +1,7 @@
 package component
 
 var TypeComponentMap = map[string]func() []BaseComponent{
-	"Player": func() []BaseComponent {
+	"PlayerBody": func() []BaseComponent {
 		return []BaseComponent{
 			&MovementComponent{},
 			&CollisionComponent{

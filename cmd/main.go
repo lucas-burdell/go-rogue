@@ -26,7 +26,7 @@ func getWindowSize() (int, int) {
 
 func findPlayer(list []*game_core.Actor) *game_core.Actor {
 	for _, v := range list {
-		if v.Type == "Player" {
+		if v.Type == "PlayerBody" {
 			return v
 		}
 	}

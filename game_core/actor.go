@@ -6,12 +6,13 @@ import (
 )
 
 type Actor struct {
-	Position   *data.Vector
-	Symbol     rune
-	Layer      int
-	IsTile     bool
-	Type       string
-	Components []component.BaseComponent
+	Position    *data.Vector
+	Symbol      rune
+	Layer       int
+	TileMap     string
+	Type        string
+	Components  []component.BaseComponent
+	Attachments []*Actor
 }
 
 func (a *Actor) FindComponentByName(name string) component.BaseComponent {
